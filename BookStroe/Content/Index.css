@@ -1,0 +1,305 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.loop {
+    position: relative;
+    left:50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 400px;
+}
+
+#wrap {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    border: 1px solid #9cc5ef;
+    overflow: hidden;
+}
+
+#slider {
+    width: 1600%;
+    height: 100%;
+    font: 100px/400px Microsoft Yahei;
+    text-align: center;
+    color: #fff;
+    margin-left: 0;
+    -webkit-animation: slide1 3s ease-out infinite;
+}
+
+    #slider li {
+        float: left;
+        width: 1920px;
+        height: 100%;
+    }
+
+    #slider img {
+        width: 1920px;
+        height: 100%;
+    }
+@-webkit-keyframes slide1 {
+    0% {
+        margin-left: 0;
+    }
+
+    23% {
+        margin-left: 0;
+    }
+
+    33% {
+        margin-left: -1920px;
+    }
+
+    56% {
+        margin-left: -1920px;
+    }
+
+    66% {
+        margin-left: -3840px;
+    }
+
+    90% {
+        margin-left: -3840px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes slide2 {
+    0% {
+        margin-left: -1920px;
+    }
+
+    23% {
+        margin-left: -1920px;
+    }
+
+    33% {
+        margin-left: -3840px;
+    }
+
+    56% {
+        margin-left: -3840px;
+    }
+
+    66% {
+        margin-left: 0;
+    }
+
+    90% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1920px;
+    }
+}
+
+@-webkit-keyframes slide3 {
+    0% {
+        margin-left: -3840px;
+    }
+
+    23% {
+        margin-left: -3840px;
+    }
+
+    33% {
+        margin-left: 0;
+    }
+
+    56% {
+        margin-left: 0;
+    }
+
+    66% {
+        margin-left: -1920px;
+    }
+
+    90% {
+        margin-left: -1920px;
+    }
+
+    100% {
+        margin-left: -3840px;
+    }
+}
+
+#first:checked ~ #wrap #slider {
+    -webkit-animation-name: slide1;
+}
+
+#second:checked ~ #wrap #slider {
+    -webkit-animation-name: slide2;
+}
+
+#third:checked ~ #wrap #slider {
+    -webkit-animation-name: slide3;
+}
+
+#first:active ~ #wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: 0;
+}
+
+#second:active ~ #wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: -600px;
+}
+
+#third:active ~ #wrap #slider {
+    -webkit-animation-name: none;
+    margin-left: -3840px;
+}
+
+#opts {
+    width: 1920px;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font: 32px/50px Microsoft Yahei;
+    position: absolute;
+    top: 320px;
+    left: 800px;
+}
+
+    #opts label {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 40px;
+        background: #2c79f3;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+        #opts label:hover {
+            background: #405871;
+        }
+#first, #second, #third {
+    display: none;
+}
+
+.wd-390 {
+    width: 390px;
+}
+.fl {
+    float: left;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.icon-star-line2:before {
+    content: "\e947";
+}
+.fs-22 {
+    font-size: 22px;
+}
+.pr {
+    position: relative;
+}
+.tp-3 {
+    top: 3px;
+}
+.cl-f {
+    color: #fff;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.tp-2 {
+    top: 2px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.cb {
+    float: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    border: none !important;
+    outline: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 0px !important;
+    line-height: 0px !important;
+    clear: both;
+}
+.oh {
+    overflow: hidden;
+}
+.wd-50p {
+    width: 50%;
+}
+.ht-183 {
+    height: 183px;
+}
+.bd-4-f {
+    border: 4px #fff solid;
+}
+.scale {
+    /*padding: 10%;*/
+}
+.db {
+    display: block;
+}
+.visible {
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+}
+.ht-93 {
+    height: 93px;
+}
+.mg-0015 {
+    margin: 0 15px;
+}
+
+.fr {
+    float: right;
+}
+.wd-300 {
+    width: 300px;
+}
+.mg-70000000 {
+    margin: 7px 0px 0px 0px;
+}
+.wd-33p {
+    width: 33.33333333%;
+}
+.mg-3 {
+    margin: 3px;
+}
+.hidden {
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    opacity: 0;
+    visibility: hidden;
+    filter: alpha(opacity=0);
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mg-0 {
+    margin: 0px;
+}

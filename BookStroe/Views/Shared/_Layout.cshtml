@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网上书店</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style type="text/css">
+        html, body {
+            font-family: ;
+            font-size: 100%;
+            background:#e5d9d9
+        }
+        body {
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            font-family: "微软雅黑", "黑体", "Microsoft YaHei", "SimSun", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #212121;
+        }
+        .header {
+            height: 190px;
+            border-bottom: 2px #3ab5e6 solid;
+            position: relative;
+            z-index: 102;
+        }
+        .header_middle {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo{
+            float:left;
+            margin-top:0px;
+        }
+
+        .footer {
+            border-top: 1px #e1e1e1 solid;
+            background-color: #fff;
+        }
+        .ta-rt {
+            text-align: right;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .fs-15 {
+            font-size: 15px;
+        }
+        .bd-1-d {
+            border: 1px #ddd solid;
+        }
+        .br-4 {
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            -ms-border-radius: 4px;
+        }
+        .pd-0610 {
+            padding: 6px 10px;
+        }
+        .mr-10 {
+            margin-right: 10px;
+        }
+        .cl-a9 {
+            color: #a9a9a9;
+        }
+        .pr {
+            position: relative;
+        }
+        .tp-3 {
+            top: 3px;
+        }
+        .fs-18 {
+            font-size: 18px;
+        }
+        .search{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("登录", "Login", "Home")</li>
+                    <li>@Html.ActionLink("注册", "Register", "Home")</li>
+                </ul>
+                <ul class="nav pull-right">
+                    <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("联系客服", "Index", "Home")</li>
+                    <li>@Html.ActionLink("收藏夹", "About", "Home")</li>
+                    <li>@Html.ActionLink("我的书店", "Contact", "Home")</li>
+                    </ul>
+                </ul>
+             </div>
+        <div class="header_middle">
+            <div class="scontainer" id="scontainer">
+                <div class="logo-container">
+                    <a class="logo">
+                        <img src="images/logo.png" alt="" class="db"/>
+                    </a>
+                </div>
+             <div class="fr ta-rt mt-8 cart">
+                 <a target="_blank" class="fs-15 bd-1-d br-4 pd-0610 cart-box" href="">
+                     <span class="icon-cart-block mr-10 cl-a9 pr tp-3 fs-18"></span>
+                     <span class="mr-5">购物车</span>
+                     <label class="cl-f fw-nm br-10 cart_num"></label>
+                 </a>
+             </div>
+                <div class="cb"></div>
+             </div>
+        </div>
+        <div class="header_down">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("首页", "Index", "Home")</li>
+                    <li>@Html.ActionLink("书库", "Stack", "Home")</li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="请输入书名" />
+                    <input type="button" value="搜索" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 f_grid1">
+                <h3>关于我们</h3>
+                <a href="#"><img src="images/logo.png" alt="" /></a>
+                <p>书店简介</p>
+            </div>
+
+            <div class="col-md-6 f_grid3">
+                <h3>联系方式</h3>
+                <ul class="list">
+                    <li><p>电话 : XXXXXX</p></li>
+                    <li><p>QQ: XXXXXX</p></li>
+                    <li><p>邮箱 : <a href="">XXXX</a></p></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

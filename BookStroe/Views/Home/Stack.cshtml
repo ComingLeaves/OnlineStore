@@ -1,0 +1,85 @@
+﻿@using BookStroe.Models
+@model IQueryable<BookStroe.Models.BookDetails>
+@{
+    ViewBag.Title = "Stack";
+}
+<link href="~/Content/Stack.css" rel="stylesheet" />
+<div class="stack">
+    <div class="stack-box">
+        <div class="stack-list-box">
+            <ul class="stack-list">
+                <li>
+                    <ul class="stack-item">
+                        <li class="item active">
+                            <a href="@Url.Action("Stack","Home")">总榜</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackJingGuan","Home")">经管励志</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackKeXue","Home")">科学技术</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackRenWen","Home")">人文社科</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackShaoEr","Home")">少儿童书</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackShengHuo","Home")">生活时尚</a>
+                        </li>
+                        <li class="item">
+                            <a href="@Url.Action("StackWenXue","Home")">文学艺术</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cb"></div>
+    </div>
+    
+    <div class="fl">
+        <ul class="book-list-box">
+            <li class="book-list active">
+                
+                @foreach(BookDetails bookDetail in Model)
+                {
+                    
+                <div class="book-list-box mb-5 mr-10">
+                    <div class="bd-1-e8 pd-1900">
+                        <a target="_blank" href="">
+                            <div class="book-list-pic fl">
+                                <img class="ma db transition" src="~/Dataimg/@bookDetail.Path" height="100%" title=""
+                                     alt="" style="opacity:1; max-width:none;" />
+                            </div>
+                        </a>
+                        <div class="book-list-cont fr">
+                            <div class="book-name ht-42 oh">
+                                <p>@bookDetail.BookName</p>
+                            </div>
+                            <div>
+                                <div class="ht-100 oh">
+                                    <p class="book-author"><em>作者:@bookDetail.Author</em></p>
+                                    <p class="money">¥@(Math.Round(bookDetail.Price * 0.8, 2))&nbsp;&nbsp;<em>¥@bookDetail.Price</em></p>
+                                    <p class="sum mt-5">销量:@bookDetail.SaleNum</p>
+                                </div>
+                                <div class="mt-15 ht-38 lh-35">
+                                    <a class="bc-bl cl-f pd-0610 mr-20 addcart" goods-id="" href=";">
+                                        <span class="icon-cart-block mr-5 cl-f pr tp-2"></span>加入购物车
+                                    </a>
+                                    <label class="bc-f cl-9 bd-1-c pd-0610 mr-20 cp choose-box collect " goods-id="">
+                                        <span class="icon-star-line mr-5 pr tp-1"></span>收藏
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="cb"></div>
+                        </div>
+                    </div>
+                </div>
+                    
+                }
+
+            </li>
+        </ul>
+    </div>
+</div>

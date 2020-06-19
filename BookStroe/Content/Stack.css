@@ -1,0 +1,267 @@
+﻿
+.stack-list {
+    
+}
+.stack-item .item.active {
+    background-color: #2db4ea;
+}
+    .stack-item .item.active a {
+        color: #fff;
+    }
+.stack-list-box {
+    float: left;
+}
+.stack {
+    width: 1200px;
+    float:none;
+}
+.stack-box {
+    border: 1px #e8e8e8 solid;
+    background-color: #f3f3f3;
+    margin-top: 2px;
+}
+.cb {
+    float: none !important;
+    visibility: hidden !important;
+    height: 0px !important;
+    border: none !important;
+    outline: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 0px !important;
+    line-height: 0px !important;
+    clear: both;
+}
+.item {
+    float: left;
+    display: block;
+    padding: 0px 16px;
+    margin: 4px 5px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px #e8e8e8 solid;
+    background-color: #fff;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.pageswitchbar {
+    float: right;
+    padding: 15px 0 15px 20px;
+    text-align: left;
+    color: #333;
+    text-align: right;
+}
+.pageswitch {
+    float: right;
+}
+.pageswitch1 {
+    float: left;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.pageswitchbar a,
+.pageswitchbar page {
+    display: inline-block;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    border: 1px solid #e8e8e8;
+    margin: 0 6px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    vertical-align: middle;
+    float: left;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.disabled {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 6px;
+    color: #999;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    vertical-align: middle;
+}
+.pageswitchbar page.current {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 6px;
+    color: #fff;
+    background-color: #2db4ea;
+    border: 1px solid #2db4ea;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    vertical-align: middle;
+}
+.pageswitchbar a:hover {
+    text-decoration: none;
+    border: 1px solid #2db4ea;
+    color: #fff;
+    background-color: #2db4ea;
+}
+.pageswitchbar li {
+    display: block;
+}
+
+.book-list {
+    display: none;
+    width: 1200px;
+}
+.book-list.active {
+    display: block;
+}
+    .book-list .book-list-box {
+        position: relative;
+        float: left;
+        width: 550px;
+        height: 280px;
+        margin-top: 5px;
+        margin-right:10px;
+    }
+    .book-list .book-list-pic {
+        height: 270px;
+        width: 270px;
+        padding: 0px;
+        overflow: hidden;
+        border-right: 1px #e8e8e8 solid;
+    }
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.bd-1-e8 {
+    border: 1px #e8e8e8 solid;
+}
+.pd-1900 {
+    padding: 19px 0;
+}
+.ma {
+    margin: 0 auto;
+}
+.db {
+    display: block;
+}
+.transition {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: translateZ(0);
+}
+.book-list-pic img {
+    height: 250px;
+    margin-left:10px;
+    margin-right:10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.book-list .book-list-cont {
+    width: 220px;
+    margin-left: 10px;
+    line-height: 1.7;
+}
+.book-list .money {
+    font-size: 18px;
+    color: #e4393c;
+}
+    .book-list .money em {
+        font-style: normal;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: #999999;
+    }
+.book-list .sum {
+    font-style: normal;
+    font-size: 14px;
+    color: #999999;
+}
+
+.ht-100 {
+    height: 100px;
+}
+.oh {
+    overflow: hidden;
+}
+.book-list .book-name {
+    height: 50px;
+    margin-bottom:10px;
+}
+.book-list .book-author em {
+    height:100px;
+    font-style: normal;
+    font-size: 14px;
+    color: #999999;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.ht-38 {
+    height: 38px;
+}
+.lh-35 {
+    line-height: 35px;
+}
+.bc-bl {
+    background-color: #2ab4e8;
+}
+.cl-f {
+    color: #fff;
+}
+.pd-0610 {
+    padding: 6px 10px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.tp-2 {
+    top: 2px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.bc-f {
+    background-color: #fff;
+}
+.cl-9 {
+    color: #999;
+}
+.bd-1-c {
+    border: 1px #ccc solid;
+}
+.pd-0610 {
+    padding: 6px 10px;
+}
+.cp {
+    cursor: pointer;
+}
+.tp-1 {
+    top: 1px;
+}
